@@ -1,5 +1,52 @@
 # @aws-amplify/ui-react
 
+## 2.15.3
+
+### Patch Changes
+
+- [#1681](https://github.com/aws-amplify/amplify-ui/pull/1681) [`7beda1ea2`](https://github.com/aws-amplify/amplify-ui/commit/7beda1ea2e28f5de4beefa50f2032cef3e4870e1) Thanks [@jacoblogan](https://github.com/jacoblogan)! - Remove hygen
+
+* [#1666](https://github.com/aws-amplify/amplify-ui/pull/1666) [`ef5a70817`](https://github.com/aws-amplify/amplify-ui/commit/ef5a708170ff2b177e79a5e2d8c6ea2645ee453a) Thanks [@calebpollman](https://github.com/calebpollman)! - chore(ui-react): updates to allow eslint react-hooks/rules-of-hooks set to error
+  - update eslint 'rules-of-hooks/exhaustive-deps' from 'warning' to 'error'
+  - turn linting on for entire ui-react package
+  - add missing or update dep arrays as needed to satisfy 'rules-of-hooks/exhaustive-deps'
+  - add DefaultFooter component in SignIn
+  - add DefaultHeader component in ConfirmSignUp
+  - add DefaultComponents interface and remove PartialDeep and related files
+  - add useAuthenticatorService and error throw in useAuthenticator to prevent conditional hook calls
+* Updated dependencies [[`34a19a541`](https://github.com/aws-amplify/amplify-ui/commit/34a19a541b4b733a6688a38a435423e9c607e918), [`16dced7de`](https://github.com/aws-amplify/amplify-ui/commit/16dced7de5edc73c064b7ec4bddbefe586e98393)]:
+  - @aws-amplify/ui@3.6.3
+
+## 2.15.2
+
+### Patch Changes
+
+- [#1652](https://github.com/aws-amplify/amplify-ui/pull/1652) [`b9a181bc9`](https://github.com/aws-amplify/amplify-ui/commit/b9a181bc9da2411017877a91dc931812e8371bb8) Thanks [@dbanksdesign](https://github.com/dbanksdesign)! - Fixing shadow and outline CSS variables in the default styles.
+
+* [#1657](https://github.com/aws-amplify/amplify-ui/pull/1657) [`65ad18e49`](https://github.com/aws-amplify/amplify-ui/commit/65ad18e4980aa7973c28eda333b967eb4aac42dd) Thanks [@wlee221](https://github.com/wlee221)! - chore: Add error message when `useAuthenticator` can't find a parent `Authenticator.Provider`.
+
+- [#1655](https://github.com/aws-amplify/amplify-ui/pull/1655) [`5379686e6`](https://github.com/aws-amplify/amplify-ui/commit/5379686e643e02f35c3aa3b3a26af41d01c5b463) Thanks [@hbuchel](https://github.com/hbuchel)! - fix: accessibly hide label text for CheckboxField when labelHidden is…
+
+* [#1638](https://github.com/aws-amplify/amplify-ui/pull/1638) [`4b146599d`](https://github.com/aws-amplify/amplify-ui/commit/4b146599d49279bda93076f62e33debef5a70edd) Thanks [@zchenwei](https://github.com/zchenwei)! - chore: updating import paths to reduce circular dependencies
+
+- [#1654](https://github.com/aws-amplify/amplify-ui/pull/1654) [`b940de62a`](https://github.com/aws-amplify/amplify-ui/commit/b940de62a2061c9e6f1e5f2ada09ed7153dbeec9) Thanks [@joebuono](https://github.com/joebuono)! - Add `nonce` prop to AmplifyProvider to allow strict CSP rules
+
+- Updated dependencies [[`b9a181bc9`](https://github.com/aws-amplify/amplify-ui/commit/b9a181bc9da2411017877a91dc931812e8371bb8)]:
+  - @aws-amplify/ui@3.6.2
+
+## 2.15.1
+
+### Patch Changes
+
+- [#1622](https://github.com/aws-amplify/amplify-ui/pull/1622) [`14e66c476`](https://github.com/aws-amplify/amplify-ui/commit/14e66c476871da8e3f88983d0115bfcb95407281) Thanks [@joebuono](https://github.com/joebuono)! - Addresses our use of dangerouslySetInnerHTML within the AmplifyProvider, and prevents server-side XSS by filtering out closing </style> tags.
+
+* [#1625](https://github.com/aws-amplify/amplify-ui/pull/1625) [`e799d32a4`](https://github.com/aws-amplify/amplify-ui/commit/e799d32a4a298e526a3469ee813597a1d09dfd58) Thanks [@dbanksdesign](https://github.com/dbanksdesign)! - Fix broken references in default theme and changing `defaultTheme` to be exported as `BaseTheme` type rather than `WebTheme` because we don't need to be using a `WebTheme` as it has extra stuff only the provider needs. If you want to get a defaultTheme of `WebTheme` type you can run `createTheme()`
+
+- [#1625](https://github.com/aws-amplify/amplify-ui/pull/1625) [`e799d32a4`](https://github.com/aws-amplify/amplify-ui/commit/e799d32a4a298e526a3469ee813597a1d09dfd58) Thanks [@dbanksdesign](https://github.com/dbanksdesign)! - Fix broken references in default theme and changing `defaultTheme` to be exported as `BaseTheme` type rather than `WebTheme` because we don't need to be using a `WebTheme` as it has extra stuff only the provider needs. If you want to get a defaultTheme of `WebTheme` type you can run `createTheme()`
+
+- Updated dependencies [[`68cf0494f`](https://github.com/aws-amplify/amplify-ui/commit/68cf0494f15356af54ee5aa0b4749cdd9a104aca), [`e799d32a4`](https://github.com/aws-amplify/amplify-ui/commit/e799d32a4a298e526a3469ee813597a1d09dfd58), [`e799d32a4`](https://github.com/aws-amplify/amplify-ui/commit/e799d32a4a298e526a3469ee813597a1d09dfd58)]:
+  - @aws-amplify/ui@3.6.1
+
 ## 2.15.0
 
 ### Minor Changes
